@@ -3,9 +3,9 @@ package Zad1;
 import java.util.Random;
 
 public class Array {
-    private static int size = 10;
 
     public static int[] generateArray (){
+        final int size = 10;
         Random random = new Random();
         int[] randomArray = new int[size];
         for (int i = 0; i <size; i++){
