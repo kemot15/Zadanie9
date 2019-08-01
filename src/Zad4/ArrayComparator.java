@@ -3,23 +3,23 @@ package Zad4;
 import java.util.Arrays;
 
 public class ArrayComparator {
-    private static boolean result = true;
+    ///private static boolean result = true;
     public static boolean compare (int[] array1, int[] array2){
         if (isNotNull(array1) && isNotNull(array2)) {
             if (lenghtCheck(array1, array2)){
                 for (int i = 0; i < array1.length; i++){
                     if (array1[i] != array2[i]) {
-                        result = false;
-                        return result;
+                        //result = false;
+                        return false;
                     }
                 }
             }else{
-                result = false;
-                return result;
+               // result = false;
+                return false;
             }
         }else{
-            result = false;
-            return result;
+           // result = false;
+            return false;
         }
 
         return true;
@@ -33,14 +33,14 @@ public class ArrayComparator {
                     compare(array1[i], array2[i]);
                 }
             } else {
-                result = false;
-                return result;
+               // result = false;
+                return false;
             }
         }else{
-            result = false;
-            return result;
+            //result = false;
+            return false;
         }
-            return result;
+            return true;
     }
 
     public static void showInfo (boolean result){
