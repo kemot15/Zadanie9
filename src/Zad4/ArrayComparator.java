@@ -26,11 +26,10 @@ public class ArrayComparator {
     }
 
     public static boolean compare (int[][] array1, int[][] array2) {
-        int var = 0;
         if (isNotNull(array1) && isNotNull(array2)) {
             if (lenghtCheck(array1, array2)) {
                 for (int i = 0; i < array1.length; i++){
-                    compare(array1[i], array2[i]);
+                    return compare(array1[i], array2[i]);
                 }
             } else {
                // result = false;

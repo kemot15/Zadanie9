@@ -3,12 +3,13 @@ package Zad1;
 import java.util.Random;
 
 public class Array {
+    public static final int SIZE = 10;
 
     public static int[] generateArray (){
-        final int size = 10;
+
         Random random = new Random();
-        int[] randomArray = new int[size];
-        for (int i = 0; i <size; i++){
+        int[] randomArray = new int[SIZE];
+        for (int i = 0; i <SIZE; i++){
             randomArray[i] = random.nextInt(20); //ograniczenie dla latwiejszego sprawdzania wynikow
         }
         return randomArray;
